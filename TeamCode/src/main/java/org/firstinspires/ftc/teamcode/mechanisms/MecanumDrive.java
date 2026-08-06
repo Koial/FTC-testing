@@ -115,19 +115,5 @@ public class MecanumDrive {
     public void setServoPos(double pos) {
         servoHood.setPosition(pos);
     }
-
-    public void push(ElapsedTime shootTimer) {
-        while(shootTimer.milliseconds()<=0 && shootTimer.milliseconds()>=2000) {
-            if(shootTimer.milliseconds() < 1000) {
-                setMotorSpeed(1.0);
-            }
-            if(shootTimer.milliseconds() >= 1000 && shootTimer.milliseconds() <= 1500) {
-                setMotorSpeed(0.0);
-            }
-            if(shootTimer.milliseconds() > 1500) {
-                setMotorSpeed(1.0);
-            }
-        }
-    }
 }
 
