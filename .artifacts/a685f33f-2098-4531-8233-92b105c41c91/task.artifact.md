@@ -1,0 +1,4 @@
+- [x] Add PID constants and state variables to `TestFull_IMU.java`
+- [x] Initialize `pidTimer` in `init()`
+- [x] Implement PID logic with deadzone in `loop()`
+- [x] Verify changes and create walkthrough
